@@ -26,8 +26,10 @@ class MainActivity : AppCompatActivity() {
         GlobalScope.launch {
             database.contactDao().insertContact(Contacts(0,"Akash","7600009898"))
         }
-
+        getData()
     }
 
-
+    private fun getData(){
+        Log.i("test","Hello, World")
+    }
 }
